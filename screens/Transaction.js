@@ -27,6 +27,7 @@ export default class Transaction extends Component {
     }
     return (
       <View style={styles.container}>
+        <Image style={styles.logo} source={require('images/appIcon.png')} />
         <Text>{hasCameraPermission?scannedData:"Request for Camera Permission"}</Text>
         <TouchableOpacity
           style={{
